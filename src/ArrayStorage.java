@@ -38,7 +38,8 @@ void delete (String uuid) {
  * @return array, contains only Resumes in storage (without null)
  */
 Resume[] getAll () {
-    Resume[] allResume = new Resume[ count ]; System.arraycopy (storage, 0, allResume, 0, count); return allResume;
+    Resume[] allResume = new Resume[ count ];
+    System.arraycopy (storage, 0, allResume, 0, count); return allResume;
 }
 
 int size () {
