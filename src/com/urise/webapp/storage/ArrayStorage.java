@@ -17,9 +17,9 @@ public class ArrayStorage {
     }
     
     public void update(Resume r) {
-        int indexOfResume = foundIndex (r.getUuid ());
+        int indexOfResume = foundIndex (r.getUuid());
         if(indexOfResume == -1) {
-            printError ();
+            printError();
         } else {
             storage[indexOfResume] = r;
         }
